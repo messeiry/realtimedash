@@ -1,0 +1,44 @@
+<head>
+  <title>simple</title>
+</head>
+
+<body>
+  <h1>RealTime Dashboards for Telecom Probs and IoT</h1>
+  <h2>Developed by Mohamed ELMesseiry</h2>
+  {{> hello}}
+  {{> info}}
+  {{> chart101 }}
+
+
+  {{> controls }}
+  {{> reactiveChart chart_id="liveChart"}} 
+
+
+
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<template name="info">
+
+</template>
+
+
+<template name="controls">
+  <button>Generate Stream</button>
+</template>
+  
+<template name="chart101">
+  <h3>This is a sample chart</h3>
+  <div id="chart">
+    {{ createChart }}
+  </div>
+</template>
+
+
+<template name="reactiveChart"> 
+  <div id="{{chart_id}}"></div> 
+</template>

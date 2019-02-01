@@ -1,0 +1,1 @@
+Perfmon = new Meteor.Collection("perfmon");
